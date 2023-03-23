@@ -1,0 +1,60 @@
+{
+    ":quarto": {
+        "scope": "quarto",
+        "prefix": ":quarto",
+        "body": [
+            "```{r results=\"asis\"}",
+            "#| warning: false",
+            "#| echo: false",
+            "cat(readLines('../macros.qmd'))",
+            "```",
+            "---",
+            "format:",
+            "  html:",
+            "    html-math-method: mathjax",
+            "    output-file: \"index\"",
+            "    output-ext: \"html\"",
+            "  gfm:",
+            "    html-math-method: katex",
+            "    output-file: \"README\"",
+            "    output-ext: \"md\"",
+            "  pdf:    ",
+            "    pdf-engine: lualatex",
+            "    documentclass: jlreq",
+            "    editor: visual",
+            "    latex-clean: true",
+            "---",
+        ],
+        "description": ""
+    },
+
+
+
+    ":note": {
+		"scope": "quarto",
+        "prefix": ":note",
+        "body": [
+            ":::{.callout-note}",
+            "",
+            ":::",
+        ],
+        "description": ""
+    },
+    ":theorem": {
+		"scope": "quarto",
+        "prefix": ":theorem",
+        "body": [
+            ":::{.callout-note}",
+            "## Theorem",
+            "",
+            ":::",
+        ],
+        "description": ""
+    },
+
+
+
+
+
+
+}

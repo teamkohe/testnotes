@@ -1,0 +1,35 @@
+```{r results="asis"}
+#| warning: false
+#| echo: false
+cat(readLines('../macros.qmd'))
+```
+---
+format:
+  html:
+    html-math-method: mathjax
+    output-file: "index"
+    output-ext: "html"
+  gfm:
+    html-math-method: katex
+    output-file: "README"
+    output-ext: "md"
+  pdf:
+    pdf-engine: lualatex
+    documentclass: jlreq
+    editor: visual
+    latex-clean: true
+---
+
+# Envelope Theorem (one choice variable and one constraint)
+
+Let $F$ and $G$ be econtinuously differentiable functions of $x$ and $\theta$. For any given $\theta$, let $x^*(\theta)$ maximize $F(x,\theta)$ subject to $c \ge G(x,\theta)$, and let $\lambda^*(\theta)$ be the associated value of the Lagrange multipliesr. Suppose that $x^*(\theta)$ and $\lambda^*(\theta)$ are also continuously differentiable functions, and that the constraint qualification $G_1(x^*(\theta), \theta) \ne 0$ holds for all values of $\theta$. Then, the maximum value function defined by
+
+$$
+V(\theta) = \max_x F(x,\theta) \subjectto c \ge G(x,\theta)
+$$
+
+satisfies
+
+$$
+V'(\theta) = F_2(x^*(\theta),\theta) - \lambda^*(\theta) G_2(x^*(\theta), \theta).
+$$
