@@ -38,6 +38,7 @@ if [ -n "$comment" ]; then
 else
   date_str=$(date "+%Y-%m-%d %H:%M")
   hostname_str=$(hostname)
-  git commit -m "Changes made on $date_str from $hostname_str"
+  # git commit -m "Changes made on $date_str from $hostname_str"
+  git commit -m "Changes made on $date_str"
 fi
 git push origin HEAD
