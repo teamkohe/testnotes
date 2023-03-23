@@ -13,6 +13,7 @@ def main():
     links = []
     for subdir in subdirs:
         index_path = os.path.join(subdir, 'index.html')
+        readme_path = os.path.join(subdir, 'README.md')
         if os.path.exists(index_path):
             with open(index_path, 'r') as f:
                 soup = BeautifulSoup(f.read(), 'html.parser')
@@ -21,7 +22,7 @@ def main():
                     text = h1.text.strip()
                 else:
                     text = subdir
-            link = f'[{text}]({index_path})'
+            link = f'[{text}]({index_path}) ([For repository]({readme_path}))'
             links.append(link)
 
     with open('main.qmd', 'w') as f:

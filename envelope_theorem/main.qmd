@@ -35,5 +35,3 @@ satisfies
 $$
 V'(\theta) = F_2(x^*(\theta),\theta) - \lambda^*(\theta) G_2(x^*(\theta), \theta).
 $$
-
-*itaic test*

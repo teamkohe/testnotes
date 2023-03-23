@@ -24,5 +24,3 @@ satisfies
 $$
 V'(\theta) = F_2(x^\ast(\theta),\theta) - \lambda^\ast(\theta) G_2(x^\ast(\theta), \theta).
 $$
-
-*itaic test*
