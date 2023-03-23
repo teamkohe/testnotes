@@ -10,4 +10,8 @@ save.bashで操作を全部してgitもしちゃう。
 
 Quartoなら $\mathbb{R}$ `\bR` ってコマンドも使えちゃう。
 
-[envelope theorem](envelope_theorem/README.md)
+test
+
+md [envelope theorem](envelope_theorem/README.md)
+
+html [envelope theorem](envelope_theorem/index.html)
