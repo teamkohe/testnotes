@@ -5,12 +5,12 @@
 # Envelope Theorem (one choice variable and one constraint)
 
 Let $F$ and $G$ be econtinuously differentiable functions of $x$ and
-$\theta$. For any given $\theta$, let $x^*(\theta)$ maximize
+$\theta$. For any given $\theta$, let $x^\ast(\theta)$ maximize
 $F(x,\theta)$ subject to $c \ge G(x,\theta)$, and let
-$\lambda^*(\theta)$ be the associated value of the Lagrange multipliesr.
-Suppose that $x^*(\theta)$ and $\lambda^*(\theta)$ are also continuously
+$\lambda^\ast(\theta)$ be the associated value of the Lagrange multipliesr.
+Suppose that $x^\ast(\theta)$ and $\lambda^\ast(\theta)$ are also continuously
 differentiable functions, and that the constraint qualification
-$G_1(x^*(\theta), \theta) \ne 0$ holds for all values of $\theta$. Then,
+$G_1(x^\ast(\theta), \theta) \ne 0$ holds for all values of $\theta$. Then,
 the maximum value function defined by
 
 $$

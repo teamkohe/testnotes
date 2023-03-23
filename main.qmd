@@ -1,35 +1,11 @@
-```{r results="asis"}
-#| warning: false
-#| echo: false
-cat(readLines('macros.qmd'))
-```
 ---
 format:
   html:
-    html-math-method: mathjax
     output-file: "index"
     output-ext: "html"
   gfm:
-    html-math-method: katex
     output-file: "README"
     output-ext: "md"
-  pdf:
-    pdf-engine: lualatex
-    documentclass: jlreq
-    editor: visual
-    latex-clean: true
 ---
-
-# testnotes
-
-Quartoファイルmain.qmdで書いて、pandocでindex.htmlとmain.pdfを出力する。
-
-save.bashで操作を全部してgitもしちゃう。
-
-Quartoなら $\bR$ `\bR` ってコマンドも使えちゃう。
-
-test
-
-md [envelope theorem](envelope_theorem/README.md)
-
-html [envelope theorem](envelope_theorem/index.html)
+# Table of Contents
+- [envelope_theorem](envelope_theorem/index.html)

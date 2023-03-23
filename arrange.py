@@ -18,6 +18,8 @@ def arrange(folder):
             modified_text += original_text[i]
         elif not is_in_delimiter and original_text[i] == "’":
             modified_text += "&apos;"
+        elif is_in_delimiter and original_text[i] == "*":
+            modified_text += "\\ast"
         else:
             modified_text += original_text[i]
 
