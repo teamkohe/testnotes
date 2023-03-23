@@ -26,10 +26,10 @@ for file in *; do
 done
 for dir in ${arr[@]}; do
     if [ $dir != "main_files" ]; then
-        pandoc --pdf-engine=lualatex -V documentclass=jlreq -V geometry:margin=1in -V fontfamily:libertinus -V fontsize=12pt -V latex-clean: true -H template.tex $dir/README.md -o $dir/main.pdf
+        pandoc --pdf-engine=lualatex -V documentclass=jlreq -V geometry:margin=1in -V fontfamily:libertinus -V fontsize=12pt -H template.tex $dir/README.md -o $dir/main.pdf
     fi
 done
-pandoc --pdf-engine=lualatex -V documentclass=jlreq -V geometry:margin=1in -V fontfamily:libertinus -V fontsize=12pt -V latex-clean: true -H template.tex README.md -o main.pdf
+pandoc --pdf-engine=lualatex -V documentclass=jlreq -V geometry:margin=1in -V fontfamily:libertinus -V fontsize=12pt -H template.tex README.md -o main.pdf
 
 # Git
 git add .

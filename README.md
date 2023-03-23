@@ -8,4 +8,4 @@ Quartoファイルmain.qmdで書いて、pandocでindex.htmlとmain.pdfを出力
 
 save.bashで操作を全部してgitもしちゃう。
 
-Quartoなら $\mathbb{R}$ `\bR` って $\LaTeX$ コマンドも使えちゃう。
+Quartoなら $\mathbb{R}$ `\bR` ってコマンドも使えちゃう。

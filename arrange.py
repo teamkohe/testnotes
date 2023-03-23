@@ -1,6 +1,6 @@
 import os
 
-def arange(folder):
+def arrange(folder):
     if folder is None:
         foldername = ""
     else:
@@ -30,6 +30,6 @@ subdirs = next(os.walk('.'))[1]
 for folder in subdirs:
     if folder in ['main_files', '.git', '.vscode']:
         continue
-    arange(folder)
+    arrange(folder)
 
-arange(None)
+arrange(None)
