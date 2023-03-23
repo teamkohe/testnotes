@@ -2,7 +2,9 @@
 <script> window.MathJax = { loader: {     load: ['[tex]/physics', '[tex]/ams', '[tex]/unicode'] }, tex: {     packages: {'[+]': ['physics', 'ams', 'unicode']} } }; </script>
 <style> .math.inline {     font-size: 85%; } .math.display {     font-size: 100%; } </style>
 
-# Envelope Theorem (one choice variable and one constraint)
+# Envelope Theorem
+
+## One choice variable and one constraint
 
 Let $F$ and $G$ be econtinuously differentiable functions of $x$ and
 $\theta$. For any given $\theta$, let $x^\ast(\theta)$ maximize
@@ -20,5 +22,7 @@ $$
 satisfies
 
 $$
-V'(\theta) = F_2(x^{*}(\theta),\theta) - \lambda^{*}(\theta) G_2(x^{*}(\theta), \theta).
+V'(\theta) = F_2(x^\ast(\theta),\theta) - \lambda^\ast(\theta) G_2(x^\ast(\theta), \theta).
 $$
+
+*itaic test*

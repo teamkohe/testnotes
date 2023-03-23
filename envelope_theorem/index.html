@@ -46,11 +46,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
 <script> window.MathJax = { loader: {     load: ['[tex]/physics', '[tex]/ams', '[tex]/unicode'] }, tex: {     packages: {'[+]': ['physics', 'ams', 'unicode']} } }; </script>
 <style> .math.inline {     font-size: 85%; } .math.display {     font-size: 100%; } </style>
-<section id="envelope-theorem-one-choice-variable-and-one-constraint" class="level1">
-<h1>Envelope Theorem (one choice variable and one constraint)</h1>
+<section id="envelope-theorem" class="level1">
+<h1>Envelope Theorem</h1>
+<section id="one-choice-variable-and-one-constraint" class="level2">
+<h2 class="anchored" data-anchor-id="one-choice-variable-and-one-constraint">One choice variable and one constraint</h2>
 <p>Let <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> be econtinuously differentiable functions of <span class="math inline">\(x\)</span> and <span class="math inline">\(\theta\)</span>. For any given <span class="math inline">\(\theta\)</span>, let <span class="math inline">\(x^*(\theta)\)</span> maximize <span class="math inline">\(F(x,\theta)\)</span> subject to <span class="math inline">\(c \ge G(x,\theta)\)</span>, and let <span class="math inline">\(\lambda^*(\theta)\)</span> be the associated value of the Lagrange multipliesr. Suppose that <span class="math inline">\(x^*(\theta)\)</span> and <span class="math inline">\(\lambda^*(\theta)\)</span> are also continuously differentiable functions, and that the constraint qualification <span class="math inline">\(G_1(x^*(\theta), \theta) \ne 0\)</span> holds for all values of <span class="math inline">\(\theta\)</span>. Then, the maximum value function defined by</p>
 <p><span class="math display">\[
 V(\theta) = \max_x F(x,\theta) \text{ subject to }c \ge G(x,\theta)
@@ -59,6 +60,8 @@ V(\theta) = \max_x F(x,\theta) \text{ subject to }c \ge G(x,\theta)
 <p><span class="math display">\[
 V'(\theta) = F_2(x^*(\theta),\theta) - \lambda^*(\theta) G_2(x^*(\theta), \theta).
 \]</span></p>
+<p><em>itaic test</em></p>
+</section>
 </section>
 
 </main>

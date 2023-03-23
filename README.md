@@ -1,4 +1,4 @@
 
 # Table of Contents
 
-- [envelope_theorem](envelope_theorem/index.html)
+- [Envelope Theorem](envelope_theorem/index.html)
