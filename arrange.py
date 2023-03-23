@@ -16,10 +16,15 @@ def arrange(folder):
         if original_text[i] == "$":
             is_in_delimiter = not is_in_delimiter
             modified_text += original_text[i]
+
+        # if it is not a math environment
         elif not is_in_delimiter and original_text[i] == "’":
             modified_text += "&apos;"
+
+        # if it is a math environment
         elif is_in_delimiter and original_text[i] == "*":
             modified_text += "\\ast"
+
         else:
             modified_text += original_text[i]
 

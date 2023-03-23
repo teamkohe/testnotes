@@ -6,6 +6,7 @@
 \newcommand{\minusi}{{-i}}
 
 \renewcommand{\empty}{\emptyset}
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"03}
 
 \newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
 \renewcommand{\ubar}{\underline}

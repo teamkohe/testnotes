@@ -20,5 +20,5 @@ $$
 satisfies
 
 $$
-V'(\theta) = F_2(x^*(\theta),\theta) - \lambda^*(\theta) G_2(x^*(\theta), \theta).
+V'(\theta) = F_2(x^{*}(\theta),\theta) - \lambda^{*}(\theta) G_2(x^{*}(\theta), \theta).
 $$
