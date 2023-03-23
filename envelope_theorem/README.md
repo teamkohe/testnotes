@@ -1,6 +1,6 @@
 
-<script> window.MathJax = { loader: {     load: ['[tex]/physics', '[tex]/ams', '[tex]/unicode'] }, tex: {     packages: {'[+]': ['physics', 'ams', 'unicode']} } }; </script>
-<style> .math.inline {     font-size: 85%; } .math.display {     font-size: 100%; } </style>
+
+
 
 # Envelope Theorem
 

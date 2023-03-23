@@ -1,4 +1,5 @@
 import os
+import re
 
 def arrange(folder):
     '''
@@ -17,6 +18,14 @@ def arrange(folder):
 
     # TODO: ダブルクォーテーションの挙動
     # original_text = original_text.replace('“', '"').replace('”', '"')
+
+    # Remove text between <script> and </script> tags
+    pattern = re.compile(r'<script.*?</script>', flags=re.DOTALL)
+    original_text = pattern.sub('', original_text)
+
+    # Remove text between <style> and </style> tags
+    pattern = re.compile(r'<style.*?</style>', flags=re.DOTALL)
+    original_text = pattern.sub('', original_text)
 
     # For single dollar
     is_in_delimiter = False
