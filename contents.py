@@ -33,6 +33,7 @@ def main():
             f.write("  html:\n")
             f.write("    output-file: \"index\"\n")
             f.write("    output-ext: \"html\"\n")
+            f.write("    css: styles.css\n")
             f.write("  gfm:\n")
             f.write("    output-file: \"README\"\n")
             f.write("    output-ext: \"md\"\n")

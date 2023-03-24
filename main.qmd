@@ -3,6 +3,7 @@ format:
   html:
     output-file: "index"
     output-ext: "html"
+    css: styles.css
   gfm:
     output-file: "README"
     output-ext: "md"
