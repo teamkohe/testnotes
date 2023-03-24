@@ -24,6 +24,7 @@ def main():
                     text = subdir
             link = f'[{text}]({index_path}) ([For repository]({readme_path}))'
             links.append(link)
+    links.sort()
 
     with open('main.qmd', 'w') as f:
         if links:
