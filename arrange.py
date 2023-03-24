@@ -67,10 +67,37 @@ def arrange(folder):
 
 
 
-subdirs = next(os.walk('.'))[1]
+def replace_index_with_readme():
+    '''
+    メイン・ディレクトリのREADME.mdのsubdir/index.htmlをsubdir/README.mdに変える関数。
+    '''
+    # Define the path to the markdown file
+    path_to_file = "README.md"
 
+    # Open the file for reading
+    with open(path_to_file, "r") as f:
+        # Read the file contents
+        file_contents = f.read()
+
+        # Replace all instances of "index.html" with "README.md"
+        new_file_contents = file_contents.replace("index.html", "README.md")
+
+    # Open the file for writing
+    with open(path_to_file, "w") as f:
+        # Write the updated contents to the file
+        f.write(new_file_contents)
+
+    # Rename the file if it contains "index.html" in its name
+    if "index.html" in os.path.basename(path_to_file):
+        new_file_name = os.path.join(os.path.dirname(path_to_file), "README.md")
+        os.rename(path_to_file, new_file_name)
+
+
+
+
+subdirs = next(os.walk('.'))[1]
 for folder in subdirs:
     if folder in ['main_files', '.git', '.vscode']:
         continue
     arrange(folder)
-arrange(None)
+replace_index_with_readme()
