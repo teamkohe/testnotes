@@ -9,14 +9,11 @@ def arrange(folder):
     $に囲まれているアスタリスクの挙動が不安定だったので修正した。
     $$に囲まれているアスタリスクの挙動が不安定だったので修正した。
     '''
-    if folder is None:
-        foldername = ""
-    else:
-        foldername = folder + "/"
+    foldername = folder + "/"
     with open(foldername + "README.md", "r") as f:
         original_text = f.read()
 
-    # TODO: ダブルクォーテーションの挙動
+    # TODO: ダブルクォーテーションの挙動 (texにしたときに変な出力する)
     # original_text = original_text.replace('“', '"').replace('”', '"')
 
     # Remove text between <script> and </script> tags
